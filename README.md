@@ -9,16 +9,25 @@ This is for Non-Commercial Use only. If you want the Commercial Version, please 
 Compatible Scripts
 ===========
 Default Battle System
+
 Battle Engine Symphony
+
 Yanfly Battle Engine
+
 Jet's Viewed Battle System
+
 Archeia Engine - CTB
+
 Shaz's Mouse Script
+
 Theo Allen SBS 
+
 YSA - CATB 
 
 Compatible (but might have issues)
 ===========
 Tankentai (Needs extensive testing)
+
 Victor's Battle System (Use Items outside of battle breaks the game.)
+
 Galv Animated Battlers (Needs extensive testing)
