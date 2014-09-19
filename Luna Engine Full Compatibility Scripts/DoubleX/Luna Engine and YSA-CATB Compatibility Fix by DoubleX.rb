@@ -3,7 +3,8 @@
 #==============================================================================
 #==============================================================================
 # If you want to use YSA-CATB with Luna Engine, this script is
-# a must-have. Please credit DoubleX!
+# a must-have. You will need DoubleX RMVXA Bug Fix to YSA Battle System: 
+# Classical ATB. Please credit DoubleX!
 #==============================================================================
 
 #==============================================================================
@@ -16,6 +17,56 @@
 if $imported["YEA-BattleEngine"] && $imported["YSA-CATB"] && $imported["DoubleX RMVXA Bug Fixes to YSA-CATB"]
 
 #------------------------------------------------------------------------------|
+
+if $imported["DoubleX RMVXA Countdown Addon to YSA-CATB"] && $imported["YEL-BattleLuna YEA-Buff&StateManager Compatible"]
+
+#------------------------------------------------------------------------------|
+#  * Edit class: Game_Battler                                                  |
+#------------------------------------------------------------------------------|
+
+class Game_Battler < Game_BattlerBase
+
+  #----------------------------------------------------------------------------|
+  #  New public instance variable                                              |
+  #----------------------------------------------------------------------------|
+  attr_accessor :update_countdown
+
+  #----------------------------------------------------------------------------|
+  #  Alias method: update_state_catb_countdown                                 |
+  #----------------------------------------------------------------------------|
+  alias fix_catb_update_state_catb_countdown update_state_catb_countdown
+  def update_state_catb_countdown
+    fix_catb_update_state_catb_countdown
+    # This part is added by this snippet to mark the countdown update
+    @update_countdown = @actor_countdown
+    #
+  end # update_state_catb_countdown
+
+end # Game_Battler
+
+#------------------------------------------------------------------------------|
+#  * Edit class: SpriteHUD_States                                              |
+#------------------------------------------------------------------------------|
+
+class SpriteHUD_States < Sprite
+
+  #----------------------------------------------------------------------------|
+  #  Alias method: states_change?                                              |
+  #----------------------------------------------------------------------------|
+  alias fix_catb_states_change? states_change?
+  def states_change?
+    # This part is added by this snippet to mark state change upon countdown update
+    if @battler.update_countdown
+      @battler.update_countdown = false
+      return true
+    end
+    #
+    fix_catb_states_change?
+  end # states_change?
+
+end # SpriteHUD_States
+
+end # if $imported["DoubleX RMVXA Countdown Addon to YSA-CATB"] &&  && $imported["YEL-BattleLuna YEA-Buff&StateManager Compatible"]
 
 #------------------------------------------------------------------------------|
 #  * Edit class: SpriteHUD                                                     |

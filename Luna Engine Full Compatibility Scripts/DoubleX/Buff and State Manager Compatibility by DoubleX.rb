@@ -3,7 +3,8 @@
 #==============================================================================
 #==============================================================================
 # If you want to use Buff & State Manager with Luna engine, this script is
-# a must-have. Please credit DoubleX!
+# a must-have. This script requires DoubleX RMVXA Bug Fixes for YEA - Buff & 
+# State Manager. Please credit DoubleX!
 #==============================================================================
 
 #==============================================================================
