@@ -666,7 +666,7 @@ module BattleLuna
         # You can also use normal_color to use the default outline color.
         # ----------------------------------------------------------------- 
           :outline  =>  [0, 0, 0, 255],
-          :bold     =>  false,,   # Enable Bold? True/False
+          :bold     =>  false,   # Enable Bold? True/False
           :italic   =>  false,    # Enable Italic? True/False
         # ----------------------------------------------------------------- 
         # Set alignment settings.
