@@ -126,7 +126,7 @@ module BattleLuna
       # This function is the distance between the objects. 
       # Can be negative or positive values.
       # -----------------------------------------------------------------
-      :spacing    =>  0,
+      :spacing    =>  8,
       # -----------------------------------------------------------------
       # Enable centering for the Battler/Actor/Player UI?
       # -----------------------------------------------------------------
@@ -147,7 +147,7 @@ module BattleLuna
         :filename =>  "Skin_Main", # Picture Filename.
         :collapse =>  false,       # Enable collapse options?
         :collapse_type => 1,       # 0 - Like Battler; 1 - Grey out.
-        :highlight  =>  false,     # Highlight when selected.
+        :highlight  =>  true,    # Highlight when selected.
       # -----------------------------------------------------------------
       # When enabled, you can set custom graphics based on Actor ID/Index.
       # filename + "_ActorID" (Example: MainHUD_1)
@@ -198,12 +198,12 @@ module BattleLuna
       # Offset Values refer to how much you want to nudge the window
       # display without affecting its base x, y, and z. 
       # -----------------------------------------------------------------
-        :offset_x =>  0,
-        :offset_y =>  0,
-        :offset_z =>  0,
-        :collapse =>  true,    # Allow collapse effects? True/False
-        :collapse_type => 1,   # 0 - Like Battler; 1 - Grey out.
-        :highlight =>  false,  # Highlight when selected.
+        :offset_x      =>  0,
+        :offset_y      =>  0,
+        :offset_z      =>  0,
+        :collapse      =>  true,  # Allow collapse effects? True/False
+        :collapse_type =>  1,     # 0 - Like Battler; 1 - Grey out.
+        :highlight     =>  true,  # Highlight when selected.
       # -----------------------------------------------------------------
       # Type allows you to set the type of face graphic you want to use.
       # 0 - Default faceset; 1 - Custom face graphic.
@@ -226,13 +226,12 @@ module BattleLuna
         },
       }, # End face.
 
-      
       # -----------------------------------------------------------------
       # This section allows you to customize name settings for actors.
       # -----------------------------------------------------------------  
       :name       =>  {
-        :enable   =>  true, # Enable name display? True/False
-        :width    =>  160,  # Change the width of the name rect.
+        :enable   =>  false, # Enable name display? True/False
+        :width    =>  120,  # Change the width of the name rect.
         :height   =>  24,   # Change the height of the name rect.
         # ----------------------------------------------------------------- 
         # Offset Values refer to how much you want to nudge the window display 
@@ -301,7 +300,7 @@ module BattleLuna
         # You can also use normal_color to use the default outline color.
         # -----------------------------------------------------------------   
           :outline    =>  [0, 0, 0, 255],
-          :length     =>  220, # Width/Length of the bar.
+          :length     =>  96, # Width/Length of the bar.
           :height     =>  12,  # Height of the bar.
         # ----------------------------------------------------------------- 
         # This section allows you to customize the "HP" Vocab display.
@@ -729,7 +728,7 @@ module BattleLuna
         # 0 = Left/Default, 1 = Center, 2 = Right
         # -----------------------------------------------------------------   
           :align    =>  2,           
-          :font     =>  "Open Sans", # Set Font type.
+          :font     =>  "Times New Roman", # Set Font type.
           :size     =>  16,          # Set Font Size
         },
         #---
@@ -785,7 +784,7 @@ module BattleLuna
         # 0 = Left/Default, 1 = Center, 2 = Right
         # -----------------------------------------------------------------   
           :align    =>  2,
-          :font     =>  "Open Sans", # Set Font type.
+          :font     =>  "Times New Roman", # Set Font type.
           :size     =>  16,          # Set Font Size
         },
         #---
@@ -887,7 +886,7 @@ module BattleLuna
           :offset_x =>  2,
           :offset_y =>  2,
           :offset_z =>  19,
-          :filename =>  "", # Filename for the background picture for states.
+          :filename =>  "Skin_State", # Filename for the background picture for states.
         },
         #---
         :type_0   =>  {
@@ -944,7 +943,7 @@ module BattleLuna
       # Set alignment settings.
       # 0 = Left/Default, 1 = Center, 2 = Right
       # -----------------------------------------------------------------   
-        :align      =>  0,
+        :align      =>  1,
         :vertical   =>  false,  # Display vertically? True/False 
       # -----------------------------------------------------------------
       # Set a Background Display Type:
@@ -1115,6 +1114,10 @@ module BattleLuna
       :z            =>  300,
       :width        =>  640, # Change the width of the window.
       # -----------------------------------------------------------------
+      # This refers to the spacing between the window border and the contents.
+      # ----------------------------------------------------------------- 
+        :padding    =>  12,
+      # -----------------------------------------------------------------
       # Refers to the amount of lines displayed. By default it's 2 lines.
       # If you wish to have more and fit in the database, use the 
       # Notetag Descriptions script.
@@ -1135,7 +1138,6 @@ module BattleLuna
       
       # Type 0 settings (Windowskin)
       :type_0     =>  { 
-        :skin     => "Window",  # Name of the Windowskin
         :opacity  => 255,       # Change the transparency of the window.
                                 # 0 = Transparent, 255 = Solid      
       },
@@ -1209,7 +1211,6 @@ module BattleLuna
         
       # Type 0 settings (Windowskin)
        :type_0     =>  { 
-        :skin     => "Window", # Name of the Windowskin
         :opacity  => 255,      # Change the transparency of the window.
                                # 0 = Transparent, 255 = Solid    
       },
@@ -1283,7 +1284,7 @@ module BattleLuna
       # Set a Background Display Type:
       # 0 - Windowskin; 1 - Gradient Background; 2 - Picture
       # -----------------------------------------------------------------
-        :back_type  =>  1, 
+        :back_type  =>  0, 
       # ----------------------------------------------------------------- 
       # This allows you to set a variable to change the skin of this particular    
       # section of the menu. The default is Variable 1. Remember that it reads 
@@ -1294,7 +1295,6 @@ module BattleLuna
         
       # Type 0 settings (Windowskin)
       :type_0     =>  { 
-        :skin     => "Window",   # Name of the Windowskin
         :opacity  => 255,        # Change the transparency of the window.
                                  # 0 = Transparent, 255 = Solid    
       },
@@ -1382,7 +1382,6 @@ module BattleLuna
         
       # Type 0 settings (Windowskin)
       :type_0     =>  { 
-        :skin     => "Window", # Name of the Windowskin
         :opacity  => 255,      # Change the transparency of the window.
                                # 0 = Transparent, 255 = Solid    
       },

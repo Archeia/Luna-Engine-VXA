@@ -294,7 +294,7 @@ module MenuLuna
       # you use an image program or when mapping in RPG Maker. The higher the 
       # value, the higher it will be drawn/drawn above other items.
       # -----------------------------------------------------------------
-      :z          =>  200,       
+      :z          =>  500,       
       :width      =>  480,       # Change the width of the window.
       :height     =>  416,       # Change the height of the window.
       # -----------------------------------------------------------------
@@ -375,8 +375,8 @@ module MenuLuna
       # normal_color refers to the color of your default windowskin.
       # -----------------------------------------------------------------   
       :type_1     =>  {
-        :color1   =>  normal_color, 
-        :color2   =>  normal_color, 
+        :color1   =>  [0, 0, 0, 128],
+        :color2   =>  [0, 0, 0, 128],
         :vertical =>  false,     # Display the gradient vertically.
       },
       # -----------------------------------------------------------------   
@@ -408,7 +408,7 @@ module MenuLuna
       # :lunatic = set to true to enable lunatic mode. The settings below 
       # won't be applied except for STATUS_WINDOW settings.
       # ----------------------------------------------------------------- 
-      :lunatic    =>  false,
+      :lunatic    =>  true,
       # -----------------------------------------------------------------
       # The amount of actors displayed on the menu.
       # Scrolling is available if vertical = false.
@@ -1342,8 +1342,8 @@ module MenuLuna
       # normal_color refers to the color of your default windowskin.
       # ----------------------------------------------------------------- 
       :type_1     =>  {
-        :color1   =>  [243, 134, 48, 255],
-        :color2   =>  [243, 134, 48, 255],
+        :color1   =>  [250,105,0, 128],
+        :color2   =>  [250,105,0, 128],
         :vertical =>  false,     # Display the gradient vertically.
       },
         

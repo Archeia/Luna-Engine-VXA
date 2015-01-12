@@ -481,8 +481,8 @@ module MenuLuna
       # normal_color refers to the color of your default windowskin.
       # ----------------------------------------------------------------- 
       :type_1     =>  {
-        :color1   =>  [243, 134, 48, 255],
-        :color2   =>  [243, 134, 48, 255],
+        :color1   =>  [250,105,0, 128],
+        :color2   =>  [250,105,0, 128],
         :vertical =>  false,     # Display the gradient vertically.
       },
         

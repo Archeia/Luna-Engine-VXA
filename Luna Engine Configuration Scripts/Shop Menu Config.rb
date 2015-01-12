@@ -177,7 +177,7 @@ module MenuLuna
       # value, the higher it will be drawn/drawn above other items.
       # -----------------------------------------------------------------
       :z      =>  300,  
-      :width  =>  640,         # Change the width of the window.
+      :width  =>  480,         # Change the width of the window.
       # -----------------------------------------------------------------
       # Change the height of the window.
       # By default: max lines shown is (height - 24) / 24
@@ -573,6 +573,7 @@ module MenuLuna
       
       # BG Type 0 settings
       :type_0     =>  { 
+        :skin     => "Window",   # Name of the Windowskin
         :opacity  => 255,        # Change the transparency of the window.
                                  # 0 = Transparent, 255 = Solid   
       },
@@ -836,8 +837,8 @@ module MenuLuna
       # normal_color refers to the color of your default windowskin.
       # ----------------------------------------------------------------- 
       :type_1     =>  {
-        :color1   =>  [243, 134, 48, 255],
-        :color2   =>  [243, 134, 48, 255],
+        :color1   =>  [250,105,0, 128],
+        :color2   =>  [250,105,0, 128],
         :vertical =>  false,     # Display the gradient vertically.
       },
         
