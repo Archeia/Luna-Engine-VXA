@@ -367,7 +367,7 @@ module MenuLuna
       :height       =>  296, # Change the height of the window.
       :column       =>  1,      # Columns for displaying item list.
       :item_height  =>  24,     # Height of each items in the list.
-      # -----------------------------------------------------------------
+			# -----------------------------------------------------------------
       # This refers to the spacing between the window border and the contents.
       # ----------------------------------------------------------------- 
       :padding     => 12,
@@ -385,7 +385,7 @@ module MenuLuna
       # 0 - Windowskin; 1 - Gradient Background; 2 - Picture
       # -----------------------------------------------------------------
       :back_type    =>  0, 
-      # ----------------------------------------------------------------- 
+			# ----------------------------------------------------------------- 
       # This allows you to set a variable to change the skin of this particular    
       # section of the menu. The default is Variable 1. Remember that it reads 
       # it as a string (e.g. $game_variables[1] = “Menu_Green”).
@@ -440,7 +440,7 @@ module MenuLuna
       # Modify the Sell Window.
       # -----------------------------------------------------------------  
     WINDOW_ITEM_SELL = {
-      # -----------------------------------------------------------------
+			# -----------------------------------------------------------------
       # :x refers to the horizontal axis. Based on the Cartesian Plane. 
       # Negative values (e.g. -1) mean they would move to the left, while 
       # Positive values mean they would move to the right.
@@ -624,7 +624,7 @@ module MenuLuna
       # value, the higher it will be drawn/drawn above other items.
       # -----------------------------------------------------------------
       :z       =>  300,
-      :width   =>  320,   # Change the width of the window.
+      :width   =>  320,	  # Change the width of the window.
       :height  =>  296,   # Change the height of the display.
       # -----------------------------------------------------------------
       # This refers to the spacing between the window border and the contents.

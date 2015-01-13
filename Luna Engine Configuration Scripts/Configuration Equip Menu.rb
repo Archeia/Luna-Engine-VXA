@@ -86,7 +86,7 @@ module MenuLuna
     # This allows you to customize window commands. Change/Optimize/Clear
     # ----------------------------------------------------------------- 
     WINDOW_COMMANDS = {
-      :enable =>  true,   # Enable Window Commands? True/False
+      :enable =>  true,		# Enable Window Commands? True/False
       # -----------------------------------------------------------------
       # :x refers to the horizontal axis. Based on the Cartesian Plane. 
       # Negative values (e.g. -1) mean they would move to the left, while 
@@ -105,7 +105,7 @@ module MenuLuna
       # value, the higher it will be drawn/drawn above other items.
       # -----------------------------------------------------------------
       :z      =>  300,
-      :width  =>  432,   # Change the width of the window.
+      :width  =>  432, 	 # Change the width of the window.
       # -----------------------------------------------------------------
       # Change the height of the window.
       # By default: max lines shown is (height - 24) / 24
@@ -303,7 +303,7 @@ module MenuLuna
       # This refers to the spacing between the window border and the contents.
       # ----------------------------------------------------------------- 
       :padding     => 12,
-      # -----------------------------------------------------------------
+			# -----------------------------------------------------------------
       # Set a Background Display Type:
       # 0 - Windowskin; 1 - Gradient Background; 2 - Picture
       # -----------------------------------------------------------------
@@ -348,8 +348,8 @@ module MenuLuna
     } # End STATUS_WINDOW.
     
       # -----------------------------------------------------------------   
-      # Modify the window where the current actor equipment can be viewed and
-      # changed.
+			# Modify the window where the current actor equipment can be viewed and
+			# changed.
       # ----------------------------------------------------------------- 
     WINDOW_SLOT = {
       # -----------------------------------------------------------------

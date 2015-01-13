@@ -12,7 +12,7 @@ module MenuLuna
     # This section modifies the help window.
     # -----------------------------------------------------------------
     WINDOW_HELP = {
-      # -----------------------------------------------------------------
+			# -----------------------------------------------------------------
       # :x refers to the horizontal axis. Based on the Cartesian Plane. 
       # Negative values (e.g. -1) mean they would move to the left, while 
       # Positive values mean they would move to the right.
@@ -31,19 +31,19 @@ module MenuLuna
       # -----------------------------------------------------------------
       :z            =>  300,
       :width        =>  640, # Change the width of the window.
-      # -----------------------------------------------------------------
+			# -----------------------------------------------------------------
       # Refers to the amount of lines displayed. By default it's 2 lines.
-      # If you wish to have more and fit in the database, use the 
-      # Notetag Descriptions script.
+			# If you wish to have more and fit in the database, use the 
+			# Notetag Descriptions script.
       # -----------------------------------------------------------------
       :line_number  =>  2,
-      :height_buff  =>  0,   # Spacing between the lines vertically.
+      :height_buff  =>  0,	 # Spacing between the lines vertically.
       # -----------------------------------------------------------------
       # Set a Background Display Type:
       # 0 - Windowskin; 1 - Gradient Background; 2 - Picture
       # -----------------------------------------------------------------
       :back_type    =>  0,
-      # ----------------------------------------------------------------- 
+			# ----------------------------------------------------------------- 
       # This allows you to set a variable to change the skin of this particular    
       # section of the menu. The default is Variable 1. Remember that it reads 
       # it as a string (e.g. $game_variables[1] = “Menu_Green”).
@@ -66,7 +66,7 @@ module MenuLuna
       :type_1     =>  {
         :color1   =>  [0, 0, 0, 128],
         :color2   =>  [0, 0, 0, 128],
-        :vertical =>  false,  # Display the gradient vertically.
+        :vertical =>  false,	# Display the gradient vertically.
       },
         
       # -----------------------------------------------------------------   
@@ -84,12 +84,12 @@ module MenuLuna
     } # End WINDOW_HELP
     
       # -----------------------------------------------------------------   
-      # This section allows you to modify the Window_Category section.
-      # The place in the menu that says the sub commands of the character.
+			# This section allows you to modify the Window_Category section.
+			# The place in the menu that says the sub commands of the character.
       # -----------------------------------------------------------------   
     WINDOW_CATEGORY = {
-      :enable =>  true,   # Enable Window Category? True/False
-      # -----------------------------------------------------------------
+      :enable =>  true, 	# Enable Window Category? True/False
+		  # -----------------------------------------------------------------
       # :x refers to the horizontal axis. Based on the Cartesian Plane. 
       # Negative values (e.g. -1) mean they would move to the left, while 
       # Positive values mean they would move to the right.
@@ -106,7 +106,7 @@ module MenuLuna
       # you use an image program or when mapping in RPG Maker. The higher the 
       # value, the higher it will be drawn/drawn above other items.
       # -----------------------------------------------------------------
-      :z      =>  300,  
+      :z      =>  300,	
       :width  =>  160,         # Change the width of the window.
       # -----------------------------------------------------------------
       # Change the height of the window.
@@ -114,7 +114,7 @@ module MenuLuna
       # -----------------------------------------------------------------
       :height =>  120,
       :item_height => 24,      # Height of each command.
-      # -----------------------------------------------------------------
+		  # -----------------------------------------------------------------
       # This refers to the spacing between the window border and the contents.
       # ----------------------------------------------------------------- 
       :padding     => 12,
@@ -184,7 +184,7 @@ module MenuLuna
       # inventory is displayed.
       # -----------------------------------------------------------------    
     WINDOW_ITEM = {
-      # -----------------------------------------------------------------
+			# -----------------------------------------------------------------
       # :x refers to the horizontal axis. Based on the Cartesian Plane. 
       # Negative values (e.g. -1) mean they would move to the left, while 
       # Positive values mean they would move to the right.
@@ -202,10 +202,10 @@ module MenuLuna
       # value, the higher it will be drawn/drawn above other items.
       # -----------------------------------------------------------------
       :z            =>  300,
-      :width        =>  640,    # Change the width of the window.
-      :height       =>  224,    # Change the height of the window.
-      :column       =>  2,      # Columns for displaying item list.
-      :item_height  =>  24,     # Height of each items in the list.
+      :width        =>  640, 		# Change the width of the window.
+      :height       =>  224,		# Change the height of the window.
+			:item_height  =>  24,			# Height of each items in the list.
+      :column       =>  2,			# Columns for displaying item list.
       # -----------------------------------------------------------------
       # This refers to the spacing between the window border and the contents.
       # ----------------------------------------------------------------- 
@@ -230,16 +230,16 @@ module MenuLuna
       # it as a string (e.g. $game_variables[1] = “Menu_Green”).
       # -----------------------------------------------------------------    
       :background_variable => 1, # Set a Variable to change Window.
-      # -----------------------------------------------------------------  
-      # Customize Item Rect settings.
-      # Item rect refers to the individual items listed in the Item list.
-      # You can adjust the display over here.
-      # -----------------------------------------------------------------  
+			# -----------------------------------------------------------------  
+			# Customize Item Rect settings.
+			# Item rect refers to the individual items listed in the Item list.
+			# You can adjust the display over here.
+			# -----------------------------------------------------------------  
       :item_rect=>  {
         :custom =>  false,  # Enable custom item_rect or not? True/False
-        :width  =>  64,     # Width of the item rect.
-        :height =>  64,     # Height of the item rect.
-        :spacing_ver =>  8, # Spacing of each item vertically.
+        :width  =>  64,			# Width of the item rect.
+        :height =>  64,			# Height of the item rect.
+        :spacing_ver =>  8,	# Spacing of each item vertically.
         :spacing_hor =>  8, # Spacing of each item horizontally.
       },
         
@@ -259,7 +259,7 @@ module MenuLuna
       :type_1     =>  {
         :color1   =>  [0, 0, 0, 128],
         :color2   =>  [0, 0, 0, 128],
-        :vertical =>  false,    # Display the gradient vertically.
+        :vertical =>  false,		# Display the gradient vertically.
       },
        
       # -----------------------------------------------------------------   
@@ -277,9 +277,9 @@ module MenuLuna
     
     
       # -----------------------------------------------------------------   
-      # This section allows you to use the Status in Status Menu Add-on
-      # If you want it to display a current actor for any aesthetic or 
-      # mechanic reason.
+			# This section allows you to use the Status in Status Menu Add-on
+			# If you want it to display a current actor for any aesthetic or 
+			# mechanic reason.
       # -----------------------------------------------------------------     
     STATUS_WINDOW = {
       # -----------------------------------------------------------------
@@ -380,8 +380,8 @@ module MenuLuna
       # normal_color refers to the color of your default windowskin.
       # -----------------------------------------------------------------   
       :type_1     =>  {
-        :color1   =>  normal_color, 
-        :color2   =>  normal_color, 
+        :color1   =>  [0, 0, 0, 128],
+        :color2   =>  [0, 0, 0, 128],
         :vertical =>  false,     # Display the gradient vertically.
       },
       # -----------------------------------------------------------------   
@@ -415,7 +415,7 @@ module MenuLuna
       # won't be applied except for STATUS_WINDOW settings.
       # ----------------------------------------------------------------- 
       :lunatic    =>  true,
-      # -----------------------------------------------------------------
+			# -----------------------------------------------------------------
       # The amount of actors displayed on the menu.
       # Scrolling is available if vertical = false.
       # Make sure that :col_max and :limit_page have the same values.
@@ -489,7 +489,7 @@ module MenuLuna
       # when selecting an actor/battler skill.
       # -----------------------------------------------------------------      
       :select     =>  {
-        :enable   =>  false,       # Enable select settings? True/False
+        :enable   =>  false, 			 # Enable select settings? True/False
       # -----------------------------------------------------------------
       # Offset Values refer to how much you want to nudge the window
       # display without affecting its base x, y, and z. 
@@ -1294,7 +1294,7 @@ module MenuLuna
     # -----------------------------------------------------------------      
     CURRENT_ACTOR_WINDOW = { 
       # Sizes and Position settings
-      :enable     =>  true,      # Enable Actor Window? True/False
+      :enable     =>  true,			 # Enable Actor Window? True/False
       # -----------------------------------------------------------------
       # :x refers to the horizontal axis. Based on the Cartesian Plane. 
       # Negative values (e.g. -1) mean they would move to the left, while 
@@ -1313,14 +1313,14 @@ module MenuLuna
       # value, the higher it will be drawn/drawn above other items.
       # -----------------------------------------------------------------
       :z          =>  300,
-      :width      =>  480,        # Change the width of the window.
+      :width      =>  480, 			  # Change the width of the window.
       :height     =>  120,      
       # -----------------------------------------------------------------
       # Set a Background Display Type:
       # 0 - Windowskin; 1 - Gradient Background; 2 - Picture
       # -----------------------------------------------------------------
       :back_type       =>  0,    
-      # ----------------------------------------------------------------- 
+			# ----------------------------------------------------------------- 
       # This allows you to set a variable to change the skin of this particular    
       # section of the menu. The default is Variable 1. Remember that it reads 
       # it as a string (e.g. $game_variables[1] = “Menu_Green”).
@@ -1365,8 +1365,8 @@ module MenuLuna
       # -----------------------------------------------------------------      
     CURRENT_ACTOR_STATUS   = {
       # Position settings
-      :enable     =>  true,   # Enable Current Actor Window? True/False
-      # -----------------------------------------------------------------
+      :enable     =>  true,		# Enable Current Actor Window? True/False
+			# -----------------------------------------------------------------
       # :x refers to the horizontal axis. Based on the Cartesian Plane. 
       # Negative values (e.g. -1) mean they would move to the left, while 
       # Positive values mean they would move to the right.
@@ -1387,10 +1387,10 @@ module MenuLuna
       # -----------------------------------------------------------------
       # The main settings is for the battler UI. This allows you to add a
       # custom picture background or difference face options for this 
-      # specific window.
+			# specific window.
       # -----------------------------------------------------------------
       :main       =>  {
-        :enable   =>  false,  # Enable Current Actor Customization? True/False.
+        :enable   =>  false,	# Enable Current Actor Customization? True/False.
       # -----------------------------------------------------------------
       # Offset Values refer to how much you want to nudge the window
       # display without affecting its base x, y, and z. 
@@ -1398,11 +1398,11 @@ module MenuLuna
         :offset_x =>  12,
         :offset_y =>  66,
         :offset_z =>  10,
-        :filename =>  "Skin_Main",  # Picture Filename.
-        :collapse =>  false,        # Enable collapse options?
-        :collapse_type => 1,        # 0 - Like Battler; 1 - Grey out.
-        :highlight  =>  false,      # Highlight when selected.
-      # -----------------------------------------------------------------
+        :filename =>  "Skin_Main",	# Picture Filename.
+        :collapse =>  false,				# Enable collapse options?
+        :collapse_type => 1, 			  # 0 - Like Battler; 1 - Grey out.
+        :highlight  =>  false,		  # Highlight when selected.
+			# -----------------------------------------------------------------
       # When enabled, you can set custom graphics based on Actor ID/Index.
       # filename + "_ActorID" (Example: MainHUD_1)
       # -----------------------------------------------------------------
@@ -1413,7 +1413,7 @@ module MenuLuna
       # -----------------------------------------------------------------
         :base_class =>  false,
       }, # End main.
-      
+			
       # -----------------------------------------------------------------
       # The select settings is if you want to add a picture graphic
       # when selecting an item
@@ -1479,7 +1479,7 @@ module MenuLuna
           :base_class =>  false,
         },
       }, # End face.
-            
+			      
       # -----------------------------------------------------------------
       # This section allows you to customize name settings for actors.
       # -----------------------------------------------------------------  
@@ -2275,8 +2275,8 @@ module MenuLuna
       # normal_color refers to the color of your default windowskin.
       # ----------------------------------------------------------------- 
       :type_1     =>  {
-        :color1   =>  [243, 134, 48, 255],
-        :color2   =>  [243, 134, 48, 255],
+        :color1   =>  [250,105,0, 128],
+        :color2   =>  [250,105,0, 128],
         :vertical =>  false,     # Display the gradient vertically.
       },
         

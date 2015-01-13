@@ -88,14 +88,14 @@ module MenuLuna
         :offset_y =>  0,
       },
     } # End WINDOW_HELP
-    
+		
       # -----------------------------------------------------------------   
-      # Modify the viewport of the save menu.
-      # This is ussed when displaying sprites on one portion of the screen, 
-      # with no overflow into other regions. 
-      # -----------------------------------------------------------------  
+			# Modify the viewport of the save menu.
+			# This is ussed when displaying sprites on one portion of the screen, 
+			# with no overflow into other regions. 
+			# -----------------------------------------------------------------  
     SAVE_VIEWPORT = {
-      # -----------------------------------------------------------------
+			# -----------------------------------------------------------------
       # :x refers to the horizontal axis. Based on the Cartesian Plane. 
       # Negative values (e.g. -1) mean they would move to the left, while 
       # Positive values mean they would move to the right.
@@ -113,20 +113,20 @@ module MenuLuna
       # value, the higher it will be drawn/drawn above other items.
       # -----------------------------------------------------------------
       :z            =>  300,
-      :item_max     =>  3,    # Maximum amount of save files displayed at once.
+      :item_max     =>  3, 		# Maximum amount of save files displayed at once.
     }
     
-      # -----------------------------------------------------------------
+			# -----------------------------------------------------------------
       # Modify the look of the Save Menu.
       # -----------------------------------------------------------------  
     WINDOW_SAVE = {
-      # -----------------------------------------------------------------
+			# -----------------------------------------------------------------
       # :z refers to the item’s display priority. Think of it as layers when 
       # you use an image program or when mapping in RPG Maker. The higher the 
       # value, the higher it will be drawn/drawn above other items.
       # -----------------------------------------------------------------
       :z            =>  300,
-      :width        =>  544,  # Change the width of the window.
+      :width        =>  544,	# Change the width of the window.
       :height       =>  92,   # Change the height of the display.
       # -----------------------------------------------------------------
       # This refers to the spacing between the window border and the contents.
@@ -150,13 +150,13 @@ module MenuLuna
       # Positive values mean they would move to the down.
       # -----------------------------------------------------------------
         :y          =>  0,
-      # -----------------------------------------------------------------
+		  # -----------------------------------------------------------------
       # Size settings for text display.
       # -----------------------------------------------------------------
         :width      =>  "text_size(\"File 01\").width",
         :height     =>  "line_height",
       },
-      # -----------------------------------------------------------------
+			# -----------------------------------------------------------------
       # Set a Background Display Type:
       # 0 - Windowskin; 1 - Gradient Background; 2 - Picture
       # -----------------------------------------------------------------

@@ -1,32 +1,32 @@
 #==============================================================================
-# ■ MenuLuna: Status Menu Lunatic Configuration
+# ■ MenuLuna: Skill Menu Lunatic Configuration
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-# This section modifies the Status Menu Screen. This is meant to add features 
-# that aren't available in the default config. This section requires minimal 
+# This section modifies the Skill Menu Screen. This is meant to add features that 
+# aren't available in the default config. This section requires minimal 
 # programming knowledge, at least, the syntaxes/definitions used in RPG Maker.
 #==============================================================================
 
 module MenuLuna
-  module StatusMenu
+  module SkillMenu
 #==============================================================================
 # ■ Lunatic Instructions
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 # You need to use a _return array_ which contains all text and bitmap data.
 # For example as seen in Lunatic Status Configuration: 
 # result = [
-#   ["NAME BLOCK", [0, 0]],
-# ] 
+#		["NAME BLOCK", [0, 0]],
+#	]	
 # There are many different kinds of array. To learn more about them, either
 # consult the RPG Maker help file or learn programming basics.
 #
-# To Display Text:  
+#	To Display Text:	
 # [Text/"Text", [X, Y], [Width, Align], [FONT R, G, B(, A)], 
-#   [FontName, FontSize, FontBold, FontItalic], [OUTLINE R, G, B(, A)]],  
-# 
+#		[FontName, FontSize, FontBold, FontItalic], [OUTLINE R, G, B(, A)]],	
+#	
 # Display Text Example:
 # ["Description", [2, 33], [200, 200], [255, 255, 255, 255], 
 #   ["VLGothic", 24, true, false], [0, 0, 0, 0]],
-# 
+#	
 # You can also use commands like Font.default settings instead of setting them.
 # 
 # You can also display bitmap/images. This setting is very flexible!
@@ -73,20 +73,31 @@ module MenuLuna
 #==============================================================================
 
     # -----------------------------------------------------------------
+    # This method allows you to modify the Categories Window
+    # -----------------------------------------------------------------
+    def self.user_category_text(index, contents, item_rect, enable, select)
+		# Do your magic here!
+    end
+    
+    # -----------------------------------------------------------------
+    # This method allows you to modify the Skill Window
+    # -----------------------------------------------------------------
+    def self.user_skill_text(item, contents, item_rect, enable, select)
+		# Do your magic here!
+    end
+    
+    # -----------------------------------------------------------------
     # This method allows you to modify Window_Status
     # -----------------------------------------------------------------
-    def self.user_status_text(actor, contents)
-      result = [
-        ["NAME BLOCK", [0, 0]],
-        ["$color[54, 157, 225]", [0, 24 + 11], 255, [contents.width, 2]],
-        ["BASIC STATUS", [0, 48]],
-        ["EXP", [304, 48]],
-        ["$color[54, 157, 225]", [0, 24 * 6 + 11], 255, [contents.width, 2]],
-        ["STATS", [32, 24 * 7]],
-        ["EQUIPMENT", [288, 24 * 7]],
-        ["$color[54, 157, 225]", [0, 24 * 13 + 11], 255, [contents.width, 2]],
-        ["DESCRIPTION", [4, 24 * 14]],
-      ]
+    def self.user_status_text(index, actor, contents, item_rect, enable, select)
+		# Do your magic here!
+    end
+    
+    # -----------------------------------------------------------------
+    # This method allows you to modify the Window_Description
+    # -----------------------------------------------------------------
+    def self.user_description_text(item, contents)
+		# Do your magic here!	
     end
   end
 end

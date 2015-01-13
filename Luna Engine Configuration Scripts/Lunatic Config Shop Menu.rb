@@ -1,32 +1,31 @@
 #==============================================================================
-# ■ MenuLuna: Skill Menu Lunatic Configuration
+# ■ MenuLuna: Shop Menu Lunatic Configuration
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-# This section modifies the Skill Menu Screen. This is meant to add features that 
-# aren't available in the default config. This section requires minimal 
+# This section modifies the Shop Menu Screen. This is meant to add features 
+# that aren't available in the default config. This section requires minimal 
 # programming knowledge, at least, the syntaxes/definitions used in RPG Maker.
 #==============================================================================
-
 module MenuLuna
-  module SkillMenu
+  module ShopMenu
 #==============================================================================
 # ■ Lunatic Instructions
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 # You need to use a _return array_ which contains all text and bitmap data.
 # For example as seen in Lunatic Status Configuration: 
 # result = [
-#   ["NAME BLOCK", [0, 0]],
-# ] 
+#		["NAME BLOCK", [0, 0]],
+#	]	
 # There are many different kinds of array. To learn more about them, either
 # consult the RPG Maker help file or learn programming basics.
 #
-# To Display Text:  
+#	To Display Text:	
 # [Text/"Text", [X, Y], [Width, Align], [FONT R, G, B(, A)], 
-#   [FontName, FontSize, FontBold, FontItalic], [OUTLINE R, G, B(, A)]],  
-# 
+#		[FontName, FontSize, FontBold, FontItalic], [OUTLINE R, G, B(, A)]],	
+#	
 # Display Text Example:
 # ["Description", [2, 33], [200, 200], [255, 255, 255, 255], 
 #   ["VLGothic", 24, true, false], [0, 0, 0, 0]],
-# 
+#	
 # You can also use commands like Font.default settings instead of setting them.
 # 
 # You can also display bitmap/images. This setting is very flexible!
@@ -71,33 +70,56 @@ module MenuLuna
 # That's all you need to know for Lunatic Configurations!
 # 
 #==============================================================================
-
+    
+    # -----------------------------------------------------------------
+    # This method allows you to modify the Command Window
+    # -----------------------------------------------------------------
+    def self.user_command_text(index, contents, item_rect, enable, select)
+		# Do your magic here!
+    end
     # -----------------------------------------------------------------
     # This method allows you to modify the Categories Window
     # -----------------------------------------------------------------
     def self.user_category_text(index, contents, item_rect, enable, select)
-    # Do your magic here!
+		# Do your magic here!
     end
-    
     # -----------------------------------------------------------------
-    # This method allows you to modify the Skill Window
+    # This method allows you to modify the Sell Window
     # -----------------------------------------------------------------
-    def self.user_skill_text(item, contents, item_rect, enable, select)
-    # Do your magic here!
+    def self.user_sell_text(item, contents, item_rect, enable, select)
+		# Do your magic here!
     end
-    
     # -----------------------------------------------------------------
-    # This method allows you to modify Window_Status
+    # This method allows you to modify the Buy Window
     # -----------------------------------------------------------------
-    def self.user_status_text(index, actor, contents, item_rect, enable, select)
-    # Do your magic here!
+    def self.user_buy_text(item, contents, item_rect, enable, select)
+		# Do your magic here!
     end
-    
     # -----------------------------------------------------------------
-    # This method allows you to modify the Window_Description
+    # This method allows you to modify the Gold Window
+    # -----------------------------------------------------------------
+    def self.user_gold_text(contents)
+		# Do your magic here!
+    end
+    # -----------------------------------------------------------------
+    # This method allows you to modify the Number Window
+    # -----------------------------------------------------------------
+    def self.user_number_text(item, number, price, contents)
+		# Do your magic here!
+    end
+    # -----------------------------------------------------------------
+    # This method allows you to modify the StatusWindow
+    # cur_item is current equipment of actor.
+    # possession is number of item your party has. 
+    # -----------------------------------------------------------------
+    def self.user_status_text(index, item, actor, equippable, cur_item, possesion, contents)
+		# Do your magic here!
+    end
+    # -----------------------------------------------------------------
+    # This method allows you to modify the Description Window
     # -----------------------------------------------------------------
     def self.user_description_text(item, contents)
-    # Do your magic here! 
+		# Do your magic here! 
     end
   end
 end

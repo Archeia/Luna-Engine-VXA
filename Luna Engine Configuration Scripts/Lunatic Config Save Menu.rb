@@ -13,19 +13,19 @@ module MenuLuna
 # You need to use a _return array_ which contains all text and bitmap data.
 # For example as seen in Lunatic Status Configuration: 
 # result = [
-#   ["NAME BLOCK", [0, 0]],
-# ] 
+#		["NAME BLOCK", [0, 0]],
+#	]	
 # There are many different kinds of array. To learn more about them, either
 # consult the RPG Maker help file or learn programming basics.
 #
-# To Display Text:  
+#	To Display Text:	
 # [Text/"Text", [X, Y], [Width, Align], [FONT R, G, B(, A)], 
-#   [FontName, FontSize, FontBold, FontItalic], [OUTLINE R, G, B(, A)]],  
-# 
+#		[FontName, FontSize, FontBold, FontItalic], [OUTLINE R, G, B(, A)]],	
+#	
 # Display Text Example:
 # ["Description", [2, 33], [200, 200], [255, 255, 255, 255], 
 #   ["VLGothic", 24, true, false], [0, 0, 0, 0]],
-# 
+#	
 # You can also use commands like Font.default settings instead of setting them.
 # 
 # You can also display bitmap/images. This setting is very flexible!
@@ -75,7 +75,7 @@ module MenuLuna
     # This method allows you to modify Window_Save
     # -----------------------------------------------------------------
     def self.user_save_text(index, contents, enable)
-    # Do your magic here!
+		# Do your magic here!
     end
   end
 end
